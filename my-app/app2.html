@@ -1,10 +1,54 @@
 <html>
-<head>
-	
-	<title>Contact</title>
-</head>
 <style type="text/css">
-.styletext{
+	.refresh {
+  height: 40px;
+  padding: 0;
+  background: #FF0000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.refresh:hover {
+  background: #FF0000;
+   background: rgba(0, 0, 0, 0.08);
+}
+
+.refresh:active {
+  background: #FF0000;
+}
+
+.refresh__text,
+.refresh__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+
+.refresh__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}
+.refresh__text{
+color: #111;
+}
+	  .form{
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+	.styletext{
      display: block;
      margin-left: auto;
      margin-right: auto;
@@ -14,13 +58,15 @@
      font-weight: normal;
      color: black;
      font-family: "Quicksand", sans-serif;
+
   }
-	.form{
-     display: block;
-  margin-left: auto;
-  margin-right: auto;
+	.topnav {
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
 }
-	.topnav a {
+
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
   display: block;
   color: black;
@@ -71,33 +117,33 @@
     border: 1px solid #ccc;
     font-family: "Quicksand", sans-serif;
   }
+  
 }
 </style>
+<head>
+	<title>Veelyabout.com</title>
+</head>
 <body>
-	 <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="app2.html">Tools</a>
+	<div class="topnav">
+  <a href="indexmain.html">Home</a>
+  <a class="active" href="app2.html">Tools</a>
   <a href="app3.html">Contact</a>
-  <a class="active" href="app4.html">More</a>
+  <a href="app4.html">More</a>
+  <a href="http://localhost:3000">Account</a>
   <input type="text" placeholder="Search..">
-</svg>
-</div>
-  <iframe class="form" width="1265" height="400" src="https://mdbootstrap.com/api/snippets/embed/59901/fullscreen" frameborder="0"></iframe>
-
-  <p>
-  	
-
-
-
+ <p>
+ 	
+<iframe class="form" width="1265" height="400" src="https://mdbootstrap.com/api/snippets/embed/59901/fullscreen" frameborder="0"></iframe>
+<p> 
   </p>
-  <p>
-  	
-
-
-
-
-  </p> 
   <hr>
-  <h1 class="styletext"><b>More</b> Websites</h1>
+ 	<button onclick="window.location.href = 'app3.html';"class="refresh">
+  <span class="refresh__text">Contact us</span>
+  <span class="refresh__icon">
+   <ion-icon name="call"></ion-icon>
+  </span>
+</button>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
 </html>
